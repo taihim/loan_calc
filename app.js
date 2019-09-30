@@ -34,6 +34,11 @@ function calculateResult(e){
         }
     else
     {
+        results.style.display = 'none';
+        amount.value = '';
+        interest.value = '';
+        years.value= '';
+
         animation.style.display = 'block';
 
         setTimeout(() => {
