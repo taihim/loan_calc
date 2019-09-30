@@ -15,6 +15,9 @@ const calc = document.querySelector('#loan-form');
 calc.addEventListener('submit', calculateResult);
 
 function calculateResult(e){
+    const results = document.querySelector('.results');
+
+    
     if(amount.value == '' || interest.value == '' || years.value == '')
         {
             const card = document.querySelector('.card');
@@ -35,9 +38,7 @@ function calculateResult(e){
     else
     {
         results.style.display = 'none';
-        amount.value = '';
-        interest.value = '';
-        years.value= '';
+        
 
         animation.style.display = 'block';
 
@@ -45,7 +46,6 @@ function calculateResult(e){
             animation.style.display = 'none';
         }, 1500);
 
-        const results = document.querySelector('.results');
         
         setTimeout(() => {
         
@@ -64,9 +64,13 @@ function calculateResult(e){
             mPayment.value = monthly;
             tInterest.value = i;
 
-        }, 1550);
-         
+            amount.value = '';
+            interest.value = '';
+            years.value= '';
     
+        }, 1550);
+        
+        
     }
     
 
