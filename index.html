@@ -30,13 +30,13 @@
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon">%</span>
-                                    <input type="number" class="form-control" id='years' placeholder="Interest">
+                                    <input type="number" class="form-control" id='interest' placeholder="Interest">
                                 </div>
                             </div>
 
 
                             <div class="form-group">    
-                                    <input type="number" class="form-control" id='amount' placeholder="Years to repay">
+                                    <input type="number" class="form-control" id='years' placeholder="Years to repay">
                             </div>
 
                             <div class="form-group">
@@ -44,39 +44,39 @@
                             </div>
                         </form>
 
+                        <!-- LOADER -->
+                        
+                        <div id="loading" style='display:none'>
+                            <img src="img/loading.gif" alt="">
+                        </div>
+                        
 
+                        
                         <!--Results-->
-                        <div class="results pt-4">
+                        <div class="results pt-4" style = 'display:none'>
                             <h5>Results</h5>
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon">Monthly Payment</span>
-                                    <input type="number" class="form-control" id='monthly-payment' disabled">
+                                    <input type="number" class="form-control" id='monthly-payment' disabled>
                                 </div>
                             </div>
                         
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon">Total Payment</span>
-                                    <input type="number" class="form-control" id='total-payment' disabled">
+                                    <input type="number" class="form-control" id='total-payment' disabled>
                                 </div>
                             </div>
                         
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon">Total Interest</span>
-                                    <input type="number" class="form-control" id='total-interest' disabled">
+                                    <input type="number" class="form-control" id='total-interest' disabled>
                                 </div>
                             </div>
                         
                         </div>
-
-
-
-
-
-
-
 
                     </div>
                 </div>
@@ -84,12 +84,10 @@
         </div>
 
 
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-    <script> src='app.js'</script>
+    <script src='app.js'></script>
 </body>
 </html>
